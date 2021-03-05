@@ -1,0 +1,14 @@
+vector1 <- c(3,8,7)
+vector2 <- c(12,8,4,23,3,9)
+column.names <- c("col1","col2","col3")
+row.names <- c("row1","row2","row3")
+matrix.names <- c("matrix1","matrix2","matrix3")
+result <- array(c(vector1,vector2),dim=c(3,3,3), dimnames=list(row.names,column.names,matrix.names))
+
+print(result[3,,2])                #3rd row 2nd matrix
+
+print(result[1,3,2])               #1st row 3rd column 1st matrix
+
+print(result[,,2])                 #2nd matrix
+
+print(result)                      
